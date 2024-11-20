@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,17 +9,20 @@ namespace MauiApp1.Models
 {
     public class Etudiant
     {
+        
+
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public DateTime DateNaissance { get; set; }
         public string Email { get; set; }
-
-        public Etudiant(string name, string prenom, DateTime dateNaissance, string email)
+        public Etudiant() { }
+        public Etudiant(string nom,string prenom ,string email,DateTime dateNaissance) 
         {
-            Nom = name;
+            Nom = nom;
             Prenom = prenom;
             DateNaissance = dateNaissance;
             Email = email;
+
         }
     }
 }

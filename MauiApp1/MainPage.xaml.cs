@@ -1,15 +1,24 @@
-﻿namespace MauiApp1
+﻿using MauiApp1.Models;
+
+namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
+        
         public MainPage()
         {
             InitializeComponent();
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            // Exemple de traitement
-            //await DisplayAlert("Votre formulaire soumis avec succès, merci", "OK");
+            Etudiant etudiant = new Etudiant();
+            etudiant.Nom = nomEntry.Text;
+            etudiant.Prenom = PrenomEntry.Text;
+            etudiant.Email = emailEntry.Text;
+            etudiant.DateNaissance = dateNaisPicker.Date;
+
+            await Navigation.PushAsync(new InfosPage(etudiant));
+            
         }
     }
 }

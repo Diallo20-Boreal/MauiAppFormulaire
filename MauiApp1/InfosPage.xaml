@@ -14,12 +14,14 @@
           FontSize="18" 
           Text="Nom :" 
           HorizontalOptions="Center" />
-
         <Label x:Name="dateNaissanceLabel" 
           FontSize="18" 
           Text="Date de naissance :" 
           HorizontalOptions="Center" />
-
+        <Label x:Name="emailLabel" 
+                FontSize="18" 
+                Text="Email :" 
+                HorizontalOptions="Center" />
         <ImageButton Source="previous.png" 
                 HorizontalOptions="Center" 
                 Margin="10,25,10,0" 
