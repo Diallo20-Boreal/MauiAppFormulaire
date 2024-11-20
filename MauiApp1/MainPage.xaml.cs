@@ -9,7 +9,7 @@
         private async void Button_Clicked(object sender, EventArgs e)
         {
             // Exemple de traitement
-            await DisplayAlert("Votre formulaire soumis avec succès, merci", "OK");
+            //await DisplayAlert("Votre formulaire soumis avec succès, merci", "OK");
         }
     }
 }

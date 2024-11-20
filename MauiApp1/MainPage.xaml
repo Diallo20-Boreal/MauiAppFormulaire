@@ -25,11 +25,24 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <Label Text="Nom :" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Prénom :" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Email :" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Date de naissance :" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
-                
+                <Label Text="Nom :" 
+                       Grid.Row="0" 
+                       Grid.Column="0" 
+                       VerticalOptions="Center" />
+                <Label Text="Prénom :" 
+                       Grid.Row="1" 
+                       Grid.Column="0" 
+                       VerticalOptions="Center" />
+               
+                <Label Text="Date de naissance :" 
+                       Grid.Row="2" 
+                       Grid.Column="0" 
+                       VerticalOptions="Center" />
+                <Label Text="E-mail :" 
+                       Grid.Row="3"
+                       Grid.Column="0"
+                       VerticalOptions="Center" />
+
                 <Entry Grid.Row="0" 
                        Grid.Column="1" 
                        Placeholder="Entrez votre nom" />
@@ -37,9 +50,12 @@
                        Grid.Column="1" 
                        Placeholder="Entrez votre prénom" />
                 <Entry Grid.Row="2" 
+                       Grid.Column="1"/>
+                <Entry Grid.Row="3" 
                        Grid.Column="1" 
                        Placeholder="Entrez votre email" />
-                <DatePicker Grid.Row="3" 
+                <DatePicker x:Name="DatePickerNaissance" 
+                            Grid.Row="2" 
                             Grid.Column="1" />
             </Grid>
             <Button 
